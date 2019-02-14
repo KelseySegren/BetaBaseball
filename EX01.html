@@ -1,0 +1,61 @@
+<html>
+<head> <title> Beta Baseball </title> </head>
+<body> 
+	
+	<p align="center"><img src = "baseball.gif" height = "42" width = "42"></p>
+	<h1> <font color = "DarkBlue"><center> Beta Baseball </center></font> </h1> <hr>
+	<p>
+		Welcome to <b>Beta Baseball</b>! Beta Baseball uses up-to-date MLB statistics from 
+		your favorite players and teams and allows you to play the game with them.
+	</p>
+	<p>
+		<strong>Key Features</strong>: <br>
+		- Play against a friend or against a computer. <br>
+		- View team and individual player statistics. <br>
+		- Up-to-date player statistics that follow the actual MLB season <br>
+		- Create your team and set your lineup or positioning. <br>
+		- Active hitting, running, and field-play. <br>
+	</p>
+	<p>
+	<script>
+	var images = ["frontScreen_mockup.gif", "teamLineupSelection_mockup.gif", "baseballField_mock_up2.gif", "battersView_mockup.gif", "stealBase_mockup.gif"];
+	index = 0;
+
+	function newImage(i){
+		if (i==-1){
+			if (index==0){
+				index = images.length-1;
+			}
+			else{
+				index = index-1;
+			}
+		}
+		if (i==1){
+			if (index==images.length-1){
+				index = 0;
+			}
+			else{
+				index = index+1;
+			}
+		}
+		document.getElementById('myImage').src=images[index];
+	}
+	</script>
+		<strong>How it looks</strong>: <br>
+		(subject to change) <br>
+		<p align="center">
+			<button onclick="newImage(-1)">Left</button>
+			<img id="myImage" src="frontScreen_mockup.gif" height="300" width="400">
+			<button onclick="newImage(1)">Right</button>
+		</p>
+	</p>
+	<p>
+		<strong>How it's played</strong>: <br>
+		Begin the game by choosing your team as you view each player's statistics. <br>
+		Then, place them in the desired field position or batting order. <br>
+		Next, commence the game! If you're up to bat you'll be able to attempt to hit the ball by swinging at the opportune time and run from base to base using quick keyboard input, <br>
+		while if you're in the field you'll be able to run to the ball and attempt to throw it base to base to attempt outs! <br>
+	</p>
+	<a href= "Creators.html" target="_blank"> Meet the creators </a>
+</body>
+</html>
