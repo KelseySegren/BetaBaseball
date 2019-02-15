@@ -76,7 +76,87 @@
 			<LI>Governance: Both Pete and ourselves could be the governance. We can both provide strategic direction and long-term goals and we're all the key stakeholders.</li>
 		</ul>
 	</p>
-	
+	<p>
+		<strong>Break Down</strong> <br>
+		<ul>
+			<li>
+				Statistics grabbing: We will take statistics from Baseball Reference and how we'll do that is essentially going into its HTML and pinpointing<br>
+				the numbers and images needed within the HTML. We'll use pattern-finding code to recognize where the information is in the site's HTML to then<br>
+				retrieve the stat/image. For example we can grab an individual player's batting average implementing code that searches for the body in the HTML<br>
+				then finds a "batting average" label to them take the data right after/before it. The data can then be stored into an Azure database.
+			</li>
+			<li>
+				Team Layout: Team and player information stored in the database will be extracted and used to layout in a user interface each team and each<br>
+				player in that team. Team rosters will be constantly updated by the updating of the database from the website. The layout will have a list of <br>
+				teams to look through on the left each with their team logo and upon clicking on a team, the team roster will show up right of the teams to then <br>
+				choose from.
+			</li>
+			<li>
+				Inning Summary: At the end of an inning the statistics of that inning will be momentarilly displayed on the screen. These statistics include <br>
+				hits, runs, errors, and players left on base. The display will last until the user hits enter so that the previous inning summary does not <br>
+				remain on the screen. We'll keep track of the stats by having different variables for each stat and updating the variables as the game is <br>
+				played, for example giving the runs variable +1 every time a player scores.
+			</li>
+			<li>
+				Hitting and running: When a player is up to bat, the user can hit the space bar at the right time to hit the pitched ball and then run to the<br>
+				base by alternating the right and left arrow keys. The user will also have an option to continue running to the next base by hitting the up <br>
+				arrow.
+			</li>
+		</ul>
+	</p>
+	<p>
+		<strong>Problem Solving Brainstorm</strong> <br>
+		<br>
+		Problems and how to solve them:
+		<ol>
+			<li>
+				Which player statistics to use: Since there are so many statistics to choose from, we're going to have to decide which ones are useful in our<br>
+				program. We could physically look through all the offered stats and omit those we feel aren't useful to our program. We could ignore the problem<br>
+				and just include as many stats as we can. We could do some research and find out what experts (statiticians and baseball writers) say about <br>
+				which stats influence the game more.
+			</li>
+			<li>
+				Stats versus user skill: We see a problem in integrating both the user's skills and the player's statistics in how the game is played. We could<br>
+				(in terms of batting) just incorporate both and have the player's hit percent work with how accurately the user swings. We could ignore some<br>
+				stats and focus on user skill (leans more towards fun aspect rather than realistic simulation). We could ignore user ability (they wouldn't <br>
+				press the space bar to swing, which leans more towards simulation).
+				 
+			</li>
+			<li>
+				Ending the game: Actual baseball games last 9+ innings (baseball games could theoretically last forever), so we'll need to think of when to <br>
+				end the game. We could have a time limit. We could have a score limit and hope they reach it. We could just go nine innings (ignore time). <br>
+				We could go nine innings with some tie-breaker we create to make sure the game doesn't last too long. We could go less innings (any number we <br>
+				want). We could see what modern baseball games do.
+			</li>
+			<li>
+				Incorporate an opponent: The opponent could be another person or a computer. It's more of a problem if it's a computer. To solve that we could<br>
+				have the computer's turn to bat simulated in a way (if there's no active field-play). We could have the computer set to one difficulty (act the<br>
+				same when up to bat or in the field every time).
+			</li>
+			<li>
+				How much field-play allowed: How complicated should we get in incorporating field play? We could implement everything that comes with typical<br>
+				baseball. We could only allow a few interactive field-play elements (throwing ball).
+			</li>
+		</ol>
+		Testing:
+		<ol>
+			<li>
+				Draw comparisons to a realistic game turnout.
+			</li>
+			<li>
+				Simply asking people what they prefer (statistics based versus skill based game).
+			</li>
+			<li>
+				Measuring game length with different options. We'd pretedermine a good game length.
+			</li>
+			<li>
+				Play against the opponent many times and determine whether it's too hard or too easy (nearly unbeatable or beatable every time).
+			</li>
+			<li>
+				To see if the user is doing too much in the field we could ask for user feedback on the feel of the field-play. Is it too complicated?
+			</li>
+		</ol>
+	</p>
 
 	<hr>
 
@@ -134,6 +214,26 @@
 				<td>
 					<ul>
 						<li>Completed the 'Helpful Azure Services' section</li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>02/13/19</td>
+				<td>EX03</td>
+				<td>
+					<ul>
+						<li>Began 'Break Down' section</li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>02/14/19</td>
+				<td>EX03</td>
+				<td>
+					<ul>
+						<li>Finished 'Break Down' and Added 'Problem Solving Brainstorm' section</li>
 					</ul>
 				</td>
 			</tr>
